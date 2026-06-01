@@ -32,9 +32,13 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 30, filter: 'blur(10px)' }}
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
           transition={{ duration: 1, delay: 0.5 }}
+          className="flex flex-wrap justify-center gap-3 mb-6"
         >
-          <span className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-sm font-medium tracking-widest text-accentGold mb-6 inline-block uppercase">
+          <span className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-sm font-medium tracking-widest text-accentGold inline-block uppercase">
             Triết học Mác - Lênin
+          </span>
+          <span className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-sm font-medium tracking-widest text-accentBlue inline-block uppercase">
+            Nhóm 3 • MLN111
           </span>
         </motion.div>
 
@@ -42,19 +46,29 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-[1.1]"
+          className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 leading-[1.1] uppercase"
         >
-          Tại sao Gen Z và Cha Mẹ lại <br className="hidden md:block"/> 
-          <span className="text-gradient">suy nghĩ khác nhau?</span>
+          Phân tích sự khác biệt <br className="hidden md:block"/> 
+          trong ý thức thế hệ: <br className="hidden md:block"/>
+          <span className="text-gradient">Góc nhìn Duy vật lịch sử</span>
         </motion.h1>
 
         <motion.p 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="text-lg md:text-2xl text-gray-400 mb-12 max-w-3xl font-light leading-relaxed"
+          className="text-lg md:text-xl text-gray-300 mb-4 max-w-3xl font-light leading-relaxed"
         >
-          Sự khác biệt giữa các thế hệ không phải ngẫu nhiên mà được hình thành từ những điều kiện xã hội khác nhau.
+          Giảng viên hướng dẫn: <span className="text-white font-semibold">Nguyễn Văn Bình</span>
+        </motion.p>
+        
+        <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.4 }}
+          className="text-base md:text-lg text-gray-400 mb-12 max-w-2xl font-light italic leading-relaxed"
+        >
+          “Có bao giờ mọi người tự hỏi tại sao thế hệ của mình lại sống khác với thời ông bà ngày xưa đến thế không?”
         </motion.p>
 
         <motion.a 

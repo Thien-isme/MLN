@@ -4,23 +4,99 @@ import { motion } from 'framer-motion';
 const comparisonData = [
   {
     criterion: 'Tồn tại xã hội',
-    old: 'Kinh tế bao cấp/mới mở cửa, thiếu thốn, đề cao sự an toàn và ổn định.',
-    young: 'Kinh tế hội nhập, đầy đủ, đề cao sự tự do, sáng tạo và trải nghiệm cá nhân.'
+    old: (
+      <div className="space-y-2">
+        <p className="font-semibold text-accentGold/90 text-sm">Bối cảnh lịch sử:</p>
+        <p className="text-sm">Kinh tế kế hoạch hóa bao cấp, tự cấp tự túc, nông nghiệp truyền thống đóng vai trò chủ đạo. Đời sống thiếu thốn, thông tin hạn chế, gắn kết cộng đồng làng xã rất cao.</p>
+      </div>
+    ),
+    young: (
+      <div className="space-y-2">
+        <p className="font-semibold text-accentBlue/90 text-sm">Bối cảnh lịch sử:</p>
+        <p className="text-sm">Kinh tế thị trường, công nghiệp hóa, hiện đại hóa và hội nhập toàn cầu sâu rộng. Bùng nổ Internet, mạng xã hội và áp lực cạnh tranh kinh tế lớn (KPI).</p>
+      </div>
+    )
   },
   {
     criterion: 'Hôn nhân & Sinh con',
-    old: 'Kết hôn sớm, sinh nhiều con, coi đó là nghĩa vụ với gia đình và xã hội.',
-    young: 'Kết hôn muộn, sinh ít hoặc không sinh, đề cao sự sẵn sàng về tài chính và tâm lý.'
+    old: (
+      <div className="space-y-2">
+        <div>
+          <p className="font-semibold text-accentGold/90 text-sm">Quan niệm:</p>
+          <p className="text-sm">"An cư lạc nghiệp", kết hôn sớm, sinh nhiều con.</p>
+        </div>
+        <div>
+          <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider">Bản chất Triết học:</p>
+          <p className="text-gray-400 text-xs leading-relaxed">Phản ánh phương thức sản xuất cũ (cần nhiều lao động chân tay) và tư duy "sinh con để nhờ cậy lúc tuổi già" khi hệ thống an sinh xã hội chưa hoàn thiện.</p>
+        </div>
+      </div>
+    ),
+    young: (
+      <div className="space-y-2">
+        <div>
+          <p className="font-semibold text-accentBlue/90 text-sm">Quan niệm:</p>
+          <p className="text-sm">Xu hướng kết hôn muộn, sống độc thân hoặc ngại sinh con.</p>
+        </div>
+        <div>
+          <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider">Bản chất Triết học:</p>
+          <p className="text-gray-400 text-xs leading-relaxed">Phản ánh áp lực kinh tế hiện đại (chi phí nuôi dạy con quá cao), sự tự lập về tài chính và nhu cầu khẳng định giá trị cá nhân của giới trẻ.</p>
+        </div>
+      </div>
+    )
   },
   {
     criterion: 'Lối sống & Tiêu dùng',
-    old: 'Tiết kiệm, tích lũy tài sản (đất đai, vàng) cho tương lai và con cháu.',
-    young: 'Đầu tư cho bản thân, ưu tiên chất lượng cuộc sống và trải nghiệm hiện tại.'
+    old: (
+      <div className="space-y-2">
+        <div>
+          <p className="font-semibold text-accentGold/90 text-sm">Quan niệm:</p>
+          <p className="text-sm">Đề cao tích lũy, "thắt lưng buộc bụng", "ăn chắc mặc bền".</p>
+        </div>
+        <div>
+          <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider">Bản chất Triết học:</p>
+          <p className="text-gray-400 text-xs leading-relaxed">Tâm lý xã hội hình thành từ trải nghiệm vượt qua thời kỳ khan hiếm hàng hóa, vật chất, luôn cần tích trữ để phòng ngừa rủi ro.</p>
+        </div>
+      </div>
+    ),
+    young: (
+      <div className="space-y-2">
+        <div>
+          <p className="font-semibold text-accentBlue/90 text-sm">Quan niệm:</p>
+          <p className="text-sm">Ưu tiên trải nghiệm dịch vụ, mua sắm thông minh, chi tiền cho sức khỏe tinh thần.</p>
+        </div>
+        <div>
+          <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider">Bản chất Triết học:</p>
+          <p className="text-gray-400 text-xs leading-relaxed">Phản ánh một nền kinh tế hàng hóa phong phú, văn hóa tiêu dùng hiện đại, nơi mà việc tái tạo sức lao động tinh thần được coi trọng.</p>
+        </div>
+      </div>
+    )
   },
   {
     criterion: 'Giá trị truyền thống (Tết)',
-    old: 'Giữ gìn nghiêm ngặt phong tục, thăm hỏi họ hàng, thờ cúng.',
-    young: 'Tối giản hóa phong tục, coi Tết là thời gian nghỉ ngơi, du lịch cá nhân.'
+    old: (
+      <div className="space-y-2">
+        <div>
+          <p className="font-semibold text-accentGold/90 text-sm">Quan niệm:</p>
+          <p className="text-sm">Chuẩn bị mâm cao cỗ đầy, bám sát các nghi lễ thủ tục nghiêm ngặt, sum họp bắt buộc.</p>
+        </div>
+        <div>
+          <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider">Bản chất Triết học:</p>
+          <p className="text-gray-400 text-xs leading-relaxed">Ý thức hệ coi trọng tính cộng đồng và tôn ti trật tự để duy trì sự ổn định của cấu trúc gia đình truyền thống.</p>
+        </div>
+      </div>
+    ),
+    young: (
+      <div className="space-y-2">
+        <div>
+          <p className="font-semibold text-accentBlue/90 text-sm">Quan niệm:</p>
+          <p className="text-sm">Tết tinh gọn, đơn giản hóa thủ tục lễ nghi, xu hướng đi du lịch hoặc nghỉ ngơi xả stress.</p>
+        </div>
+        <div>
+          <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider">Bản chất Triết học:</p>
+          <p className="text-gray-400 text-xs leading-relaxed">Sự thích nghi của con người trước nhịp sống công nghiệp bận rộn; chuyển từ nhu cầu "ăn Tết" sang "nghỉ Tết" và tự do cá nhân.</p>
+        </div>
+      </div>
+    )
   }
 ];
 
@@ -56,15 +132,17 @@ const ComparisonTable: React.FC = () => {
               </div>
               
               <div className="col-span-1 md:col-span-4 flex items-center">
-                <div className="md:hidden text-xs text-accentGold uppercase mb-2 font-semibold">Thế hệ Cha Mẹ</div>
-                <p className="text-gray-300 font-light leading-relaxed">{row.old}</p>
+                <div className="w-full">
+                  <div className="md:hidden text-xs text-accentGold uppercase mb-2 font-semibold">Thế hệ Cha Mẹ</div>
+                  <div className="text-gray-300 font-light leading-relaxed">{row.old}</div>
+                </div>
               </div>
               
               <div className="col-span-1 md:col-span-5 flex items-center relative">
                 <div className="hidden md:block absolute -left-3 top-1/2 -translate-y-1/2 w-px h-12 bg-white/10"></div>
-                <div>
+                <div className="w-full md:pl-4">
                   <div className="md:hidden text-xs text-accentBlue uppercase mt-4 mb-2 font-semibold">Thế hệ Trẻ</div>
-                  <p className="text-gray-300 font-light leading-relaxed">{row.young}</p>
+                  <div className="text-gray-300 font-light leading-relaxed">{row.young}</div>
                 </div>
               </div>
             </motion.div>

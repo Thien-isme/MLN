@@ -20,7 +20,7 @@ const QuestionQuote: React.FC = () => {
         >
           <span className="text-accentGold text-6xl md:text-8xl font-serif leading-none absolute -top-8 -left-8 md:-top-12 md:-left-12 opacity-50">"</span>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-medium leading-tight text-white mb-8 tracking-tight">
-            Những khác biệt đó xuất phát từ lựa chọn cá nhân hay do <span className="text-transparent bg-clip-text bg-gradient-to-r from-accentGold to-amber-200">điều kiện lịch sử xã hội?</span>
+            Những khác biệt đó xuất phát từ lựa chọn cá nhân đơn thuần hay phản ánh sự thay đổi của <br className="hidden md:block"/><span className="text-transparent bg-clip-text bg-gradient-to-r from-accentGold to-amber-200">điều kiện lịch sử xã hội trong từng thời kỳ?</span>
           </h2>
           <span className="text-accentGold text-6xl md:text-8xl font-serif leading-none absolute -bottom-16 -right-8 md:-bottom-20 md:-right-12 opacity-50">"</span>
         </motion.div>

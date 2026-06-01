@@ -7,28 +7,32 @@ const topics = [
     title: 'Hôn nhân & Sinh con',
     icon: <Heart className="w-6 h-6 text-accentGold" />,
     image: '/topic_marriage.png',
-    desc: 'Tuổi kết hôn, quan niệm về con cái và áp lực lập gia đình.',
+    descOld: 'Thế hệ trước: Coi trọng việc lập gia đình sớm ổn định, sinh con đẻ cái khi còn trẻ.',
+    descYoung: 'Giới trẻ: Xu hướng kết hôn muộn, sống độc thân hoặc ngại sinh con.',
     color: 'group-hover:border-accentGold/50 group-hover:shadow-[0_0_30px_rgba(212,175,55,0.2)]'
   },
   {
     title: 'Lối sống & Tiêu dùng',
     icon: <ShoppingBag className="w-6 h-6 text-accentBlue" />,
     image: '/topic_lifestyle.png',
-    desc: 'Tích lũy tài sản vs Trải nghiệm cuộc sống hiện tại.',
+    descOld: 'Thế hệ trước: Đề cao tích cóp, "ăn chắc mặc bền", sống gói ghém, vun vén cho tương lai.',
+    descYoung: 'Giới trẻ: Thích trải nghiệm, chi tiêu cho tinh thần, công nghệ.',
     color: 'group-hover:border-accentBlue/50 group-hover:shadow-[0_0_30px_rgba(79,140,255,0.2)]'
   },
   {
     title: 'Cá nhân vs Cộng đồng',
     icon: <Users className="w-6 h-6 text-purple-400" />,
     image: '/topic_community.png',
-    desc: 'Trách nhiệm họ hàng, làng xã vs Sự tự do cá nhân.',
+    descOld: 'Thế hệ trước: Thích sống kiểu cộng đồng, đề cao sự gắn kết, sẻ chia và tương tác trực tiếp.',
+    descYoung: 'Giới trẻ: Đề cao cái tôi và sự tự do cá nhân hơn.',
     color: 'group-hover:border-purple-400/50 group-hover:shadow-[0_0_30px_rgba(192,132,252,0.2)]'
   },
   {
     title: 'Quan niệm về Tết',
     icon: <Calendar className="w-6 h-6 text-emerald-400" />,
     image: '/topic_tet.png',
-    desc: 'Nghĩa vụ thờ cúng, thăm hỏi vs Thời gian nghỉ ngơi du lịch.',
+    descOld: 'Thế hệ trước: Thích tết được quây quần, đoàn tụ, duy trì sợi dây gắn kết gia đình bền chặt.',
+    descYoung: 'Giới trẻ: Mong muốn tết được đi du lịch xả stress, không muốn ở nhà dọn dẹp tiếp khách.',
     color: 'group-hover:border-emerald-400/50 group-hover:shadow-[0_0_30px_rgba(52,211,153,0.2)]'
   }
 ];
@@ -54,7 +58,7 @@ const Introduction: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
-              className={`topic-card group relative p-6 rounded-3xl bg-secondary/50 border border-white/5 transition-all duration-500 overflow-hidden ${topic.color} hover:-translate-y-2 min-h-[240px] flex flex-col justify-end`}
+              className={`topic-card group relative p-6 rounded-3xl bg-secondary/50 border border-white/5 transition-all duration-500 overflow-hidden ${topic.color} hover:-translate-y-2 min-h-[260px] flex flex-col justify-end`}
             >
               {/* Card Background Image */}
               <img src={topic.image} alt={topic.title} className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-screen group-hover:opacity-60 group-hover:scale-110 transition-all duration-700" />
@@ -66,8 +70,11 @@ const Introduction: React.FC = () => {
                 </div>
                 <h4 className="text-xl font-semibold mb-2">{topic.title}</h4>
                 <div className="h-0 opacity-0 group-hover:h-auto group-hover:opacity-100 group-hover:mt-3 transition-all duration-300">
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    {topic.desc}
+                  <p className="text-gray-300 text-xs leading-relaxed mb-2 border-b border-white/5 pb-2">
+                    {topic.descOld}
+                  </p>
+                  <p className="text-gray-200 text-xs leading-relaxed font-semibold">
+                    {topic.descYoung}
                   </p>
                 </div>
               </div>

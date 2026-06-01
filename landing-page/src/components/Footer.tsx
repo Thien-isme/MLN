@@ -7,12 +7,15 @@ const Footer: React.FC = () => {
       
       <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
         <span className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-medium tracking-widest text-gray-400 uppercase mb-6">
-          Bài thuyết trình
+          Bài thuyết trình • Nhóm 3
         </span>
         
-        <h2 className="text-xl md:text-2xl font-bold mb-2">Triết học Mác – Lênin</h2>
-        <p className="text-gray-400 font-light max-w-2xl">
-          Chủ đề: "Tồn tại xã hội và Ý thức xã hội qua sự khác biệt giữa các thế hệ"
+        <h2 className="text-xl md:text-2xl font-bold mb-2">Triết học Mác – Lênin (MLN111)</h2>
+        <p className="text-gray-400 font-light max-w-2xl mb-2">
+          Đề tài: "Phân tích sự khác biệt trong ý thức thế hệ: Góc nhìn Duy vật lịch sử"
+        </p>
+        <p className="text-gray-500 font-light text-sm">
+          Giảng viên hướng dẫn: Nguyễn Văn Bình
         </p>
 
         <div className="mt-12 text-sm text-gray-600">

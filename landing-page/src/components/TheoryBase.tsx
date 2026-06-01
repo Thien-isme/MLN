@@ -37,15 +37,28 @@ const TheoryBase: React.FC = () => {
             </div>
 
             <div className="relative z-10 px-2">
-              <h4 className="text-2xl font-bold mb-6">Tồn tại xã hội (TTXH)</h4>
-              <ul className="space-y-4">
-                {['Phương thức sản xuất', 'Điều kiện tự nhiên', 'Dân cư'].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-gray-300">
-                    <div className="w-1.5 h-1.5 rounded-full bg-accentBlue" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <h4 className="text-2xl font-bold mb-4 text-accentBlue">Tồn tại xã hội (TTXH)</h4>
+              <p className="text-gray-300 text-sm leading-relaxed mb-6 italic">
+                "Là sinh hoạt vật chất và những điều kiện sinh hoạt vật chất của xã hội (gồm phương thức sản xuất, điều kiện tự nhiên, dân cư). Trong đó, phương thức sản xuất là quyết định nhất."
+              </p>
+              <div className="border-t border-white/5 pt-4">
+                <span className="text-xs uppercase tracking-wider text-gray-400 block mb-3 font-semibold">Các yếu tố cấu thành:</span>
+                <ul className="space-y-3">
+                  {[
+                    { name: 'Phương thức sản xuất', detail: 'Yếu tố quyết định nhất' },
+                    { name: 'Điều kiện tự nhiên', detail: 'Hoàn cảnh địa lý, môi trường sinh thái' },
+                    { name: 'Dân cư', detail: 'Quy mô, cơ cấu, sự phân bố dân số' }
+                  ].map((item, i) => (
+                    <li key={i} className="flex flex-col text-sm text-gray-300 text-left">
+                      <span className="flex items-center gap-2 font-medium text-white">
+                        <div className="w-1.5 h-1.5 rounded-full bg-accentBlue" />
+                        {item.name}
+                      </span>
+                      <span className="text-xs text-gray-500 pl-3.5 mt-0.5">{item.detail}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </motion.div>
 
@@ -117,15 +130,28 @@ const TheoryBase: React.FC = () => {
             </div>
 
             <div className="relative z-10 px-2">
-              <h4 className="text-2xl font-bold mb-6">Ý thức xã hội (YTXH)</h4>
-              <ul className="space-y-4">
-                {['Tâm lý xã hội', 'Hệ tư tưởng', 'Quan niệm sống'].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-gray-300">
-                    <div className="w-1.5 h-1.5 rounded-full bg-accentGold" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
+              <h4 className="text-2xl font-bold mb-4 text-accentGold">Ý thức xã hội (YTXH)</h4>
+              <p className="text-gray-300 text-sm leading-relaxed mb-6 italic">
+                "Là mặt tinh thần của đời sống xã hội, bao gồm tâm lý xã hội và hệ tư tưởng, phản ánh tồn tại xã hội trong những giai đoạn nhất định."
+              </p>
+              <div className="border-t border-white/5 pt-4">
+                <span className="text-xs uppercase tracking-wider text-gray-400 block mb-3 font-semibold">Các bộ phận cấu thành:</span>
+                <ul className="space-y-3">
+                  {[
+                    { name: 'Tâm lý xã hội', detail: 'Tình cảm, ước vọng, tập quán hình thành trực tiếp' },
+                    { name: 'Hệ tư tưởng', detail: 'Hệ thống quan điểm, lý luận khoa học hoặc giai cấp' },
+                    { name: 'Quan niệm sống', detail: 'Nhận thức, lối sống và các giá trị tinh thần' }
+                  ].map((item, i) => (
+                    <li key={i} className="flex flex-col text-sm text-gray-300 text-left">
+                      <span className="flex items-center gap-2 font-medium text-white">
+                        <div className="w-1.5 h-1.5 rounded-full bg-accentGold" />
+                        {item.name}
+                      </span>
+                      <span className="text-xs text-gray-500 pl-3.5 mt-0.5">{item.detail}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </motion.div>
         </div>

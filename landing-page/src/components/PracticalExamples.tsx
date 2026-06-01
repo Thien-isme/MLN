@@ -29,27 +29,30 @@ const PracticalExamples: React.FC = () => {
   }, []);
 
   const parentsData = [
-    { title: 'Kinh tế khó khăn', desc: 'Sự thiếu thốn vật chất là nỗi lo thường trực.' },
-    { title: 'Vừa qua thời bao cấp', desc: 'Tâm lý an toàn, tiết kiệm được đặt lên hàng đầu.' },
-    { title: 'Việc làm khan hiếm', desc: 'Trân trọng công việc ổn định, ngại thay đổi.' },
-    { title: 'Tích góp mua đất', desc: 'Đất đai là tài sản đảm bảo duy nhất cho tương lai.' }
+    { title: 'Kinh tế kế hoạch hóa', desc: 'Nền kinh tế tự cấp tự túc, nông nghiệp truyền thống đóng vai trò chủ đạo.' },
+    { title: 'Đời sống thiếu thốn', desc: 'Đời sống vật chất còn nhiều khó khăn, thiếu thốn, tạo thói quen tiết kiệm và phòng ngừa rủi ro.' },
+    { title: 'Thông tin hạn chế', desc: 'Giao lưu quốc tế ít, thông tin chủ yếu mang tính cục bộ.' },
+    { title: 'Gắn kết cộng đồng', desc: 'Tình làng nghĩa xóm rất cao, đề cao sự sẻ chia và tương tác trực tiếp.' }
   ];
 
   const youthData = [
-    { title: 'Kinh tế mở', desc: 'Đa dạng nguồn thu nhập, không bị giới hạn địa lý.' },
-    { title: 'Giá nhà cao', desc: 'Vượt khỏi tầm với so với thu nhập trung bình.' },
-    { title: 'Nhiều cơ hội việc làm', desc: 'Sẵn sàng nhảy việc để tìm kiếm sự phù hợp và đam mê.' },
-    { title: 'Thuê nhà và trải nghiệm', desc: 'Đầu tư vào bản thân, du lịch và chất lượng cuộc sống.' }
+    { title: 'Kinh tế thị trường', desc: 'Kinh tế mở, công nghiệp hóa, hiện đại hóa mở ra nhiều cơ hội phát triển.' },
+    { title: 'Bùng nổ công nghệ số', desc: 'Sự bùng nổ của Internet, mạng xã hội kết nối thông tin tức thời toàn cầu.' },
+    { title: 'Hội nhập toàn cầu', desc: 'Hội nhập văn hóa toàn cầu sâu rộng, lối sống cởi mở và đề cao tự do cá nhân.' },
+    { title: 'Áp lực cạnh tranh lớn', desc: 'Cạnh tranh kinh tế khốc liệt và áp lực công việc (KPI) đè nặng lên đời sống thường nhật.' }
   ];
 
   return (
     <section className="py-32 bg-background relative overflow-hidden" ref={containerRef}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-24">
-          <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-4">Ví dụ thực tế</h2>
+          <h2 className="text-sm font-semibold tracking-widest text-gray-400 uppercase mb-4">Ví dụ thực tế & Bối cảnh</h2>
           <h3 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
-            Câu chuyện <span className="text-gradient">"Tích góp mua nhà"</span>
+            Bối cảnh <span className="text-gradient">"Tồn tại xã hội"</span> & Mua đất
           </h3>
+          <p className="text-gray-400 text-base md:text-lg max-w-3xl mx-auto font-light mt-4">
+            Để hiểu vì sao thế hệ cha mẹ coi trọng việc tích lũy mua đất đai, trong khi giới trẻ có xu hướng chi tiêu trải nghiệm và chấp nhận thuê nhà, hãy nhìn vào sự khác biệt trong điều kiện sinh hoạt vật chất (Tồn tại xã hội) ở hai thời kỳ.
+          </p>
         </div>
 
         <div className="flex flex-col md:flex-row gap-12 relative">
