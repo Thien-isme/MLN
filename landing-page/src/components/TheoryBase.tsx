@@ -39,7 +39,7 @@ const TheoryBase: React.FC = () => {
             <div className="relative z-10 px-2">
               <h4 className="text-2xl font-bold mb-4 text-accentBlue">Tồn tại xã hội (TTXH)</h4>
               <p className="text-gray-300 text-sm leading-relaxed mb-6 italic">
-                "Là sinh hoạt vật chất và những điều kiện sinh hoạt vật chất của xã hội (gồm phương thức sản xuất, điều kiện tự nhiên, dân cư). Trong đó, phương thức sản xuất là quyết định nhất."
+                "Là hoàn cảnh sống vật chất bao quanh chúng ta. Nó gồm có môi trường tự nhiên, dân số và đặc biệt là cách chúng ta lao động, kiếm sống. Trong đó, phương thức sản xuất, tức là cách kiếm sống, luôn đóng vai trò quyết định nhất."
               </p>
               <div className="border-t border-white/5 pt-4">
                 <span className="text-xs uppercase tracking-wider text-gray-400 block mb-3 font-semibold">Các yếu tố cấu thành:</span>

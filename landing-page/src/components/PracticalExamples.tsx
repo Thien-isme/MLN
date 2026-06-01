@@ -11,7 +11,7 @@ const PracticalExamples: React.FC = () => {
     const ctx = gsap.context(() => {
       const items = gsap.utils.toArray('.compare-item') as HTMLElement[];
       
-      items.forEach((item, i) => {
+      items.forEach((item) => {
         gsap.from(item, {
           y: 50,
           opacity: 0,
