@@ -6,6 +6,7 @@ import PracticalExamples from './components/PracticalExamples';
 import ComparisonTable from './components/ComparisonTable';
 import Conclusion from './components/Conclusion';
 import FinalMessage from './components/FinalMessage';
+import AIUsage from './components/AIUsage';
 import Footer from './components/Footer';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <ComparisonTable />
       <Conclusion />
       <FinalMessage />
+      <AIUsage />
       <Footer />
     </main>
   );
